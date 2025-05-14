@@ -1,0 +1,116 @@
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #eee;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    background-color: #000;
+    color: white;
+}
+
+.nav-item.logout {
+    margin-top: 30px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 2px 6px;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.badge.admin {
+    background-color: darkred;
+}
+
+.status {
+    align-self: center;
+    font-weight: bold;
+}
+
+.status.aktif {
+    color: green;
+}
+
+.status.suspended {
+    color: red;
+}
+
+.add-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    cursor: pointer;
+}
